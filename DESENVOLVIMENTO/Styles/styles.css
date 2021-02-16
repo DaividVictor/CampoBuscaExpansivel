@@ -15,3 +15,42 @@ body {
     border-radius: 40px;
     padding: 10px;
 }
+
+.search-btn {
+    color: white;
+    text-decoration: none;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    transition: all 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    transition: all 0.4s;
+
+    width: 0;
+}
+
+.search-btn:hover .search-txt, .search-box:focus-within .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover .search-btn, .search-box:focus-within .search-btn {
+    color: #d10a92;
+    background: white;
+}
